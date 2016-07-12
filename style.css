@@ -1,0 +1,157 @@
+        body {
+            background: gray;
+            margin: 0px;
+            padding: 0px;
+            font-family: Magneto;
+        }
+        .textbox {
+            width: 1200px;
+            margin: 0px auto;
+        }
+        #header {
+            background: gray;
+            overflow: hidden;
+            font-family: Magneto;
+        }
+        #top h1 {
+            text-align: center;
+            color: crimson;
+        }
+        #top h2 {
+            text-align: center;
+            color: dodgerblue;
+        }
+        #body1 {
+            background: silver;
+        }
+        #info {
+            overflow: hidden;
+            padding: 6em 0em;
+        }
+        #main {
+            float: left;
+            width: 588px;
+        }
+        #main .biodata {
+            padding-bottom: 2em;
+            text-align: left;
+        }
+        .biodata .title {
+            display: block;
+            padding-top: 0.2em;
+            font-size: 2em;            
+        }
+        .text {
+            font-family: Segoe UI Light;
+            text-align: center;
+        }
+        #sidebar {
+            float: right;
+            width: 588px;
+            
+        }
+        #body2 {
+            background: silver;
+            overflow: hidden;
+            padding: 5em 0em;
+            margin: 0px auto;
+        }
+        #favpla {
+            width: 1200px;
+            margin: 0px auto;
+        }
+        .favour {
+            text-align: center;
+        }
+        .title {
+            text-align: center;
+        }
+        .icon1 {
+            margin: 0 0 2em 3.5em;
+        }
+        .icon2 {
+            margin: 0 0 2em 3.5em;
+        }
+        .icon3 {
+            margin: 0 0 2em 3.5em;
+        }
+        .icon4 {
+            margin: 0 0 2em 3.5em;
+        }
+        .fav1, 
+        .fav2, 
+        .fav3, 
+        .fav4 {
+            width: 282px;
+            overflow: hidden;
+            
+        }
+        .fav1, 
+        .fav2 {
+            float: left;
+            margin-right: 24px;
+        }
+        .fav3 {
+            float: left;
+            margin-right: 24px;
+        }
+        .fav4 {
+            float: right;
+        }
+        #body3 {
+            background: silver;
+            overflow: hidden;
+            padding: 5em 0em;
+        }
+        #mediapla {
+            width: 1200px;
+            margin: 0px auto;
+        }
+        .media {
+            text-align: center;
+        }
+        .vid1,
+        .vid2 {
+            width: 500px;
+            height: 450px;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            text-align: center;
+        }
+        .vid1,
+        .vid2 {
+            margin-right: 75px;
+        }
+        .vid1 {
+            float: left;
+        }
+        .vid2 {
+            float: right
+        }
+        #body4 {
+            background: silver;
+            overflow: hidden;
+            padding: 5em 0em;
+        }
+        #contactpla {
+            width: 625px;
+            margin: 0px auto;
+        }
+        .contact {
+            text-align: center;
+        }
+        .fb, .gplus, .twitt, .ctrust {
+            width: 150px;
+        }
+        .fb,
+        .gplus {
+            float: left;
+            margin-right: 10px;
+        }
+        .twitt {
+            float: left;
+        }
+        .ctrust {
+            float: right;
+        }
