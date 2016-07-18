@@ -1,157 +1,162 @@
-        body {
-            background: gray;
-            margin: 0px;
-            padding: 0px;
-            font-family: Magneto;
-        }
-        .textbox {
-            width: 1200px;
-            margin: 0px auto;
-        }
-        #header {
-            background: gray;
-            overflow: hidden;
-            font-family: Magneto;
-        }
-        #top h1 {
-            text-align: center;
-            color: crimson;
-        }
-        #top h2 {
-            text-align: center;
-            color: dodgerblue;
-        }
-        #body1 {
-            background: silver;
-        }
-        #info {
-            overflow: hidden;
-            padding: 6em 0em;
-        }
-        #main {
-            float: left;
-            width: 588px;
-        }
-        #main .biodata {
-            padding-bottom: 2em;
-            text-align: left;
-        }
-        .biodata .title {
-            display: block;
-            padding-top: 0.2em;
-            font-size: 2em;            
-        }
-        .text {
-            font-family: Segoe UI Light;
-            text-align: center;
-        }
-        #sidebar {
-            float: right;
-            width: 588px;
-            
-        }
-        #body2 {
-            background: silver;
-            overflow: hidden;
-            padding: 5em 0em;
-            margin: 0px auto;
-        }
-        #favpla {
-            width: 1200px;
-            margin: 0px auto;
-        }
-        .favour {
-            text-align: center;
-        }
-        .title {
-            text-align: center;
-        }
-        .icon1 {
-            margin: 0 0 2em 3.5em;
-        }
-        .icon2 {
-            margin: 0 0 2em 3.5em;
-        }
-        .icon3 {
-            margin: 0 0 2em 3.5em;
-        }
-        .icon4 {
-            margin: 0 0 2em 3.5em;
-        }
-        .fav1, 
-        .fav2, 
-        .fav3, 
-        .fav4 {
-            width: 282px;
-            overflow: hidden;
-            
-        }
-        .fav1, 
-        .fav2 {
-            float: left;
-            margin-right: 24px;
-        }
-        .fav3 {
-            float: left;
-            margin-right: 24px;
-        }
-        .fav4 {
-            float: right;
-        }
-        #body3 {
-            background: silver;
-            overflow: hidden;
-            padding: 5em 0em;
-        }
-        #mediapla {
-            width: 1200px;
-            margin: 0px auto;
-        }
-        .media {
-            text-align: center;
-        }
-        .vid1,
-        .vid2 {
-            width: 500px;
-            height: 450px;
-            align-items: center;
-            align-content: center;
-            align-self: center;
-            text-align: center;
-        }
-        .vid1,
-        .vid2 {
-            margin-right: 75px;
-        }
-        .vid1 {
-            float: left;
-        }
-        .vid2 {
-            float: right
-        }
-        #body4 {
-            background: silver;
-            overflow: hidden;
-            padding: 5em 0em;
-        }
-        #contactpla {
-            width: 625px;
-            margin: 0px auto;
-        }
-        .contact {
-            text-align: center;
-        }
-        .fb, .gplus, .twitt, .ctrust {
-            width: 150px;
-        }
-        .fb,
-        .gplus {
-            float: left;
-            margin-right: 10px;
-        }
-        .twitt {
-            float: left;
-        }
-        .ctrust {
-            float: right;
-        }
+@font-face {
+    font-family:Tillana;
+    src:url('font/Tillana-Regular.ttf')
+}
+@font-face {
+    font-family:Arima;
+    src:url('font/ArimaMadurai-Regular.ttf')
+}
+@font-face {
+    font-family:Atma;
+    src:url('font/Atma-Regular.ttf')
+}
+@font-face {
+    font-family:Secular;
+    src:url('font/SecularOne-Regular.ttf')
+}
+
+body {
+    padding: 100px 0;
+    color:black;
+    background-image: url('image/Black-Pattern-Background.jpg')
+}
+
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  font-family: Arima;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 85px;
+  left: 50%;
+  margin-left: -70px;
+  z-index: 999;
+}
+
+#Main-Block {
+    line-height: 1.5;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 800px;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 80px 75px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#top h1 {
+    font-family:Secular;
+    font-size: 10px;
+}
+
+#top h2 {
+    font-family: Arima;
+}
+
+.avatar {
+    position: absolute;
+    top: -60px;
+    left: 40%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    background: url('profile.jpg');
+    background-size: cover;
+}
+
+#body1 h1,
+#body2 h1,
+#body4 h1 {
+    font-family: Atma;
+    
+}
+
+.biotitle .title,
+.biodata p {
+    font-family: Arima;
+}
+
+.fav1 .title,
+.fav2 .title,
+.fav3 .title,
+.fav4 .title {
+    font-family: Arima;
+}
+
+#favpla {
+    display: inline-block;
+}
+
+.fav1 {
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+
+.fav2 {
+    width: 200px;
+    float: right;
+    padding: 10px;
+}
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.social .title {
+    font-family: Arima;
+}
+
+.social {
+    display: inline-block;
+}
+
+footer p {
+    font-family: Tillana;
+    color: chartreuse;
+}
