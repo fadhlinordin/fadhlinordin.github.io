@@ -159,4 +159,6 @@ a:hover.tooltips span {
 footer p {
     font-family: Tillana;
     color: chartreuse;
+    width: 300px;
+    margin: auto;
 }
