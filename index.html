@@ -5,16 +5,23 @@
     <title></title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animate.min.css" />
+    <script type="text/javascript" src="js/script.js"></script>
     <style>
     </style>
 </head>
-<body>
+<body onload="startTime()">
     <div id="Main-Block">
 <header>
- <div id="top" class="textbox">
+    <div id="top" class="textbox">
         <img class="avatar" src="image/profile.jpg" />
         <h1>Fadhli Nordin</h1>
         <h2>Kuala Lumpur , Malaysia</h2>
+    </div>
+    <div id="clockdate">
+        <div class="clockdate-wrapper">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
     </div>
 </header>
 <div id="body1" align="center">
