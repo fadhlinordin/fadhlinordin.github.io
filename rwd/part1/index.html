@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Web Design | Part 1 | Fadhli Nordin</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="js/jquery.js"></script>
+	<script>
+		//Choose if you want the window width to display - 1 = yes, 0 = no
+		var showWidth = 1;
+		
+		if(showWidth == 1){
+        	$(document).ready(function (){
+            	$(window).resize(function(){
+                	var width = $(window).width();
+                	document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
+           		});
+        	});
+		}
+    </script>
+</head>
+<body>
+ <div id="output_width"></div><!--Widow width inserted here-->
+	<div id="container">
+	<header class="main-header">
+		<img id="logo" src="images/logo.png" alt="RWD | Part 1" />
+		<nav class="main-nav">
+			<ul>
+				<li><a class="active" href="#">Place to stay</a></li>
+				<li><a href="#">School</a></li>
+				<li><a href="#">Havoc inside my head</a></li>
+				<li><a href="#">Make new things</a></li>
+				<li><a href="#">Partner in Crime</a></li>
+				<li><a href="#">Mentor</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+		<div id="content">
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">My very first post</a></h2>
+					<span>Thinking and written by: Fadhli Nordin on September 5, 2016</span>
+				</header>
+					<p> The first rule of any techonoly used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.</p>
+					<p>The Internet is so big, so powerful and pointless that for some people it is a complete subtitute for life.</p>
+					<a class="readmore" href="#">Read more</a>
+			</article>
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">My another post</a></h2>
+					<span>Thinking and written by: Fadhli Nordin on September 7, 2016</span>
+				</header>
+					<p>Any sufficiently advance technology is indistinguishable from magic.<br/>Technology gives us power, but it does not and cannot tell us how to use that power. Thanks to technology, we can instantly communicate across the world, but it still doesn't help us know what to say.</p>
+					<p>One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man.<br/>Cell phones, mobile e-mail and all the other coll and slick gadgets can cause massive losses in our creative output and overall productivity.</p>
+					<a class="readmore" href="#">Read more</a>		
+				</article>
+		</div>
+		<aside id="sidebar">
+			<div class="block">
+				<h2>Top Sidebar</h2>
+				<p>
+					The top sidebar is always on the top side of the page but somehow when you change the size of the screen, it run away to the bottom. 
+				</p>
+			</div>
+			<div class="block">
+				<h2>Mid Sidebar</h2>
+				<p>
+					The same goes to this mid sidebar, I think it has something related to the top sidebar.
+				</p>
+			</div>
+			<div class="block">
+				<h2>Bottom Sidebar</h2>
+				<p>
+					So, I am guessing that this bottom sidebar is the youngest of them all as all three sidebar always go together.
+				</p>
+			</div>
+		</aside>
+	</div>
+	<div class="clr"></div>
+	<footer>
+		<p>Copyright &copy; 2016 - Fadhli Nordin</p>
+	</footer>
+	</div>
+</body>
+</html>
